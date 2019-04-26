@@ -1,6 +1,6 @@
 <template>
   <div class="full-width content-wrapper">
-    <!--<workflow-card name="World" />-->
+    <workflow-card name="World" />
     <timeline-card/>
     <section class="single-params-group-wrapper">
       <single-param id="masterVersion" icon="fas fa-code-branch" icon-color="violet"/>
