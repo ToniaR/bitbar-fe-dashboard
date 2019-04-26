@@ -1,0 +1,89 @@
+@import '/colors.scss';
+
+$green: $pastel-green;
+$violet: $dull-lavender;
+$blue: $malibu;
+
+.small {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1em;
+}
+
+.single-params-group-wrapper {
+  display: grid;
+  grid-template-rows: 30% 5% 30% 5% 30%;
+  grid-template-columns: 45% 10% 45%;
+  width: 100%;
+}
+
+
+#masterVersion {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+#develVersion {
+  grid-row: 1/2;
+  grid-column: 3/4;
+}
+
+#bugs {
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+
+#issues {
+  grid-row: 3/4;
+  grid-column: 3/4;
+}
+
+#currentBranch {
+  grid-row: 5/6;
+  grid-column: 1/2;
+}
+.card-icon-wrapper {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid $green;
+  text-align: center;
+
+  & > i {
+    padding: 16px;
+    box-sizing: border-box;
+  }
+}
+
+.green {
+  border-color: $green;
+  color: $green;
+
+  & + section > h1.card-title {
+    color: $green;
+  }
+}
+
+.violet {
+  border-color: $violet;
+  color: $violet;
+
+  & + section > h1.card-title {
+    color: $violet;
+  }
+}
+
+.blue {
+  border-color: $blue;
+  color: $blue;
+
+  & + section > h1.card-title {
+    color: $blue;
+  }
+}
+
+p.card-description {
+  font-size: 0.8em;
+}

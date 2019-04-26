@@ -1,0 +1,13 @@
+@import './colors.scss';
+
+$card-bg: $white;
+
+#devWorkflow {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  width: 50%;
+  height: 40%;
+  min-width: 300px;
+  min-height: 380px;
+//  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
